@@ -25,7 +25,7 @@ class Bird {
       this.velocityY = 0;
     }
 
-    if (spacedPressed && this.y > this.height * 3) this.flop();
+    if (spacedPressed && this.y > this.height * 2) this.flop();
   }
 
   draw() {
