@@ -40,7 +40,7 @@ function handleObstacles() {
     obstactlesArray[i].update();
   }
 
-  if (obstactlesArray.length > 200) {
+  if (obstactlesArray.length === 7) {
     obstactlesArray.pop(obstactlesArray[0]);
   }
 }
