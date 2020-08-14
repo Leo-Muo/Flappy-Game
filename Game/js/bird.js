@@ -1,5 +1,5 @@
 const ship = new Image();
-ship.src = "ship.png";
+ship.src = "image/ship.png";
 
 class Bird {
   constructor() {

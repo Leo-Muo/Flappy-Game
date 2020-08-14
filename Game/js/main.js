@@ -3,10 +3,10 @@ const contx = canvas.getContext("2d");
 
 //-------------------Images -------------------------------
 const bang = new Image();
-bang.src = "explosion1.png";
+bang.src = "image/explosion1.png";
 
 const background = new Image();
-background.src = "BG2.jpg";
+background.src = "image/BG.jpg";
 //---------------------------------------------------
 
 canvas.width = 600;
