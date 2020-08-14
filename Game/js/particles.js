@@ -2,11 +2,11 @@ const particlesArray = [];
 
 class Particle {
   constructor() {
-    this.x = bird.x - 4;
-    this.y = bird.y;
+    this.x = bird.x + 7;
+    this.y = bird.y + 20;
     this.size = Math.random() * 7 + 3;
     this.speedY = Math.random() * 1 - 0.5;
-    this.color = "hsla(" + hue + ", 100%, 50%, 0.8)";
+    this.color = "hsla(" + hue + ", 0%, " + sat + "%, 0.8)";
   }
 
   update() {
@@ -30,8 +30,8 @@ function handleParticles() {
     particlesArray[i].draw();
   }
 
-  if (particlesArray.length > 200) {
-    for (let i = 0; i < 20; i++) {
+  if (particlesArray.length > 80) {
+    for (let i = 0; i < 10; i++) {
       particlesArray.pop(particlesArray[i]);
     }
   }

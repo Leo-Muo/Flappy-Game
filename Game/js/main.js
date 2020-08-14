@@ -15,6 +15,8 @@ canvas.height = 400;
 let spacedPressed = false;
 let angle = 0;
 let hue = 0;
+let sat = 0;
+let arr = [25, 50, 75];
 let frame = 0;
 let score = 0;
 let gamespeed = 2;
@@ -64,6 +66,7 @@ function animate() {
   requestAnimationFrame(animate);
   angle += 0.12;
   hue++;
+  sat = arr[Math.floor(Math.random() * arr.length)];
   frame++;
 
   //console.log(gamespeed);
