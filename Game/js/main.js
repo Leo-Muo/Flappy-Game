@@ -6,7 +6,7 @@ const bang = new Image();
 bang.src = "image/explosion1.png";
 
 const background = new Image();
-background.src = "image/BG.jpg";
+background.src = "image/BG.png";
 //---------------------------------------------------
 
 canvas.width = 600;
@@ -93,7 +93,7 @@ function handleCollisions() {
           bird.y + bird.height < canvas.height))
     ) {
       //collision detection
-      contx.drawImage(bang, bird.x - 14, bird.y - 14, 50, 50);
+      contx.drawImage(bang, bird.x + 2, bird.y - 9, 50, 50);
       contx.font = "25px Gerogia";
       contx.fillStyle = "white";
       contx.fillText(
