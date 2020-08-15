@@ -1,3 +1,6 @@
+const pillar = new Image();
+pillar.src = "image/pillar.png";
+
 const obstactlesArray = [];
 
 class Obstacle {
@@ -20,14 +23,23 @@ class Obstacle {
   }
 
   draw() {
-    contx.fillStyle = this.color;
-    contx.fillRect(this.x, 0, this.width, this.topH);
-    contx.fillRect(
+    // contx.fillStyle = this.color;
+    // contx.fillRect(this.x, 0, this.width, this.topH);
+    // contx.fillRect(
+    //   this.x,
+    //   canvas.height - this.bottomH,
+    //   this.width,
+    //   this.bottomH
+    // );
+    contx.drawImage(
+      pillar,
       this.x,
       canvas.height - this.bottomH,
       this.width,
       this.bottomH
     );
+
+    contx.drawImage(pillar, this.x, 0, this.width, this.topH);
   }
 }
 
