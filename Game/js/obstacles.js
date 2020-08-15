@@ -5,10 +5,10 @@ const obstactlesArray = [];
 
 class Obstacle {
   constructor() {
-    this.topH = (Math.random() * canvas.height) / 3 + 20;
-    this.bottomH = (Math.random() * canvas.height) / 3 + 20;
+    this.topH = (Math.random() * canvas.height) / 3 + 35;
+    this.bottomH = (Math.random() * canvas.height) / 3 + 30;
     this.x = canvas.width;
-    this.width = 20;
+    this.width = Math.floor(Math.random() * 40) + 20;
     this.color = "hsla(" + hue + ", 100%, 50%, 1)";
     this.counted = false;
   }
@@ -44,7 +44,7 @@ class Obstacle {
 }
 
 function handleObstacles() {
-  if (frame % 50 === 0) {
+  if (frame % 80 === 0) {
     obstactlesArray.unshift(new Obstacle());
   }
 
