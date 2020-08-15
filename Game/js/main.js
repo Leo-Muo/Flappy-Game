@@ -35,13 +35,13 @@ function handleBackground() {
   } else {
     BG.x1 -= gamespeed;
   }
-  contx.drawImage(background, BG.x1, BG.y, BG.width, BG.height);
-
   if (BG.x2 <= -BG.width + gamespeed) {
     BG.x2 = BG.width;
   } else {
     BG.x2 -= gamespeed;
   }
+
+  contx.drawImage(background, BG.x1, BG.y, BG.width, BG.height);
   contx.drawImage(background, BG.x2, BG.y, BG.width, BG.height);
 }
 
@@ -68,8 +68,6 @@ function animate() {
   hue++;
   sat = arr[Math.floor(Math.random() * arr.length)];
   frame++;
-
-  //console.log(gamespeed);
 }
 
 animate();
