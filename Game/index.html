@@ -12,11 +12,34 @@
   </head>
 
   <body>
-    <header>
-      <h1>Just another Flappy Bird Game</h1>
-    </header>
+    <div id="container">
+      <header>
+        <h1>Just Another Flappy Bird Game</h1>
+      </header>
 
-    <canvas id="canvas1"></canvas>
+      <section id="canvas">
+        <canvas id="canvas1"></canvas>
+      </section>
+
+      <section id="button">
+        <input
+          id="pause"
+          type="image"
+          src="image/pause.png"
+          alt="Submit"
+          width="150"
+          height="50"
+        />
+        <input
+          id="restart"
+          type="image"
+          src="image/restart.png"
+          alt="Submit"
+          width="150"
+          height="50"
+        />
+      </section>
+    </div>
 
     <script src="js/bird.js"></script>
     <script src="js/particles.js"></script>
