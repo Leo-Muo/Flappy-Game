@@ -7,6 +7,7 @@ bang.src = "image/explosion1.png";
 
 const background = new Image();
 background.src = "image/BG.png";
+
 //---------------------------------------------------
 
 canvas.width = 600;

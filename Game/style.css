@@ -25,17 +25,8 @@ header {
 }
 
 #button {
-  width: 350px;
+  width: 175px;
   margin: 20px auto;
-}
-
-#pause {
-  margin-right: 20px;
-  transition-duration: 1s;
-  transition-property: transform;
-}
-#pause:hover {
-  transform: scale(0.9);
 }
 
 #restart {
